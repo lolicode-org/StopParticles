@@ -1,0 +1,25 @@
+{
+  "schemaVersion": 1,
+  "id": "stopparticles",
+  "version": "${version}",
+  "name": "StopParticles",
+  "description": "",
+  "authors": [],
+  "contact": {},
+  "license": "The Unlicense",
+  "icon": "assets/stopparticles/icon.png",
+  "environment": "server",
+  "entrypoints": {
+    "main": [
+      "org.lolicode.stopparticles.Stopparticles"
+    ]
+  },
+  "mixins": [
+    "stopparticles.mixins.json"
+  ],
+  "depends": {
+    "fabricloader": ">=${loader_version}",
+    "fabric": "*",
+    "minecraft": "${minecraft_version}"
+  }
+}
