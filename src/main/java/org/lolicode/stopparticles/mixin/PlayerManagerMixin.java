@@ -23,6 +23,6 @@ public abstract class PlayerManagerMixin {
 
     @Inject(at = @At(value = "TAIL"), method = "placeNewPlayer")
     private void onPlayerJoin(Connection connection, ServerPlayer player, CommonListenerCookie clientData, CallbackInfo ci) {
-        Stopparticles.noParticles.put(player.getUUID(), viaAPI.getPlayerVersion(player.getUUID()) < serverVersion);
+        Stopparticles.noParticles.put(player.getUUID(), viaAPI.getPlayerVersion(player.getUUID()) < serverVersion);  // should use != to support future versions?
     }
 }
